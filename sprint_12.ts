@@ -1,6 +1,6 @@
 
 class T01{
-    private n1 : number = 33;
+    private _n1 number = 33;
     private _n2 : number = 55;
     public access : boolean = false;
     
