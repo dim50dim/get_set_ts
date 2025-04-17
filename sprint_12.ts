@@ -15,7 +15,11 @@ class T01{
     }
 }
 
-  class T02 extends T01 {};
+  class T02 extends T01 {
+    public get n1() :number{
+
+    }
+  };
 
   const obj2 = new T02();
   console.log(obj2);
