@@ -2,9 +2,8 @@
 class T01{
     private n1 : number = 33;
     private _n2 : number = 55;
-    public get n11 () : number {
-        return this.n1;
-    }
+    public access : boolean = false;
+
 }
 
 const obj1 = new T01();

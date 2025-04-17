@@ -2,8 +2,9 @@
 class T01 {
     n1 = 33;
     _n2 = 55;
+    access = false;
     get n11() {
-        return this.n1;
+        return this.access ? this.n1 : 0;
     }
 }
 const obj1 = new T01();
