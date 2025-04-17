@@ -2,10 +2,13 @@
 class T01{
     private _n1 : number = 33;
     private _n2 : number = 55;
+    public get _n1 () : number {
+        return this._n1;
+    }
 }
 
 const obj1 = new T01();
-console.log(obj1._n1);
+console.log(obj1.n1);
 
 
 
