@@ -4,6 +4,9 @@ class T01{
     private _n2 : number = 55;
 }
 
+const obj1 = new T01();
+console.log(obj1._n1);
+
 
 
 // Task 01
