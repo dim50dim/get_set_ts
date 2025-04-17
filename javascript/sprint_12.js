@@ -4,9 +4,18 @@ class T01 {
     _n2 = 55;
     access = false;
     get n11() {
-        return this.access ? this.n1 : 0;
+        return this.n1;
     }
+    get n22() {
+        return this._n2;
+    }
+    pubj;
 }
+class T02 extends T01 {
+}
+;
+const obj2 = new T02();
+console.log(obj2);
 const obj1 = new T01();
 console.log(obj1.n11);
 // Task 01

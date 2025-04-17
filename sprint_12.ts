@@ -3,8 +3,23 @@ class T01{
     private n1 : number = 33;
     private _n2 : number = 55;
     public access : boolean = false;
-
+    
+    public get n11 () : number {
+        return this.n1;
+    }
+    public get n22 () : number {
+        return this._n2;
+    }
+    public set n1 ( a : number) {
+        this.n1 = a;
+    }
 }
+
+  class T02 extends T01 {};
+
+  const obj2 = new T02();
+  console.log(obj2);
+  
 
 const obj1 = new T01();
 console.log(obj1.n11);
