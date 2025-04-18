@@ -1,29 +1,17 @@
 "use strict";
-class T01 {
-    n1 = 33;
-    _n2 = 55;
-    access = false;
-    get n11() {
-        return this.n1;
-    }
-    get n22() {
-        return this._n2;
-    }
-    pubj;
-}
-class T02 extends T01 {
-}
-;
-const obj2 = new T02();
-console.log(obj2);
-const obj1 = new T01();
-console.log(obj1.n11);
 // Task 01
 // Создайте класс Goods, который имеет свойство title - string и _weight (private), number. Напишите конструктор, для задания данных свойств. Уточнения для всех задач далее. Если не упоминается про модификатор доступа то считаем что public. Также в конструкторе всегда порядок элементов делается такой, как они описаны в задаче.
-// тут пишем класс
+class Goods {
+    title;
+    _weight;
+    constructor(title, _weight) {
+        this._weight = _weight;
+        this.title = title;
+    }
+}
 // проверяем
-// const g1 = new Goods('cucumber', 500);
-// console.log(g1);
+const g1 = new Goods('cucumber', 500);
+console.log(g1);
 // console.log(g1._weight); // выдает ошибку - поскольку private
 // Task 02
 // Допишем геттер в класс Goods. Допишите в предыдущий класс метод геттер для получения свойства _weight из объекта. Название свойства weight.

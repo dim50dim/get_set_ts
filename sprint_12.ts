@@ -3,13 +3,20 @@
 // Task 01
 // Создайте класс Goods, который имеет свойство title - string и _weight (private), number. Напишите конструктор, для задания данных свойств. Уточнения для всех задач далее. Если не упоминается про модификатор доступа то считаем что public. Также в конструкторе всегда порядок элементов делается такой, как они описаны в задаче.
 
-
-// тут пишем класс
+class Goods {
+   public title: string; 
+   private _weight: number;
+     constructor(title:string , _weight:number ){
+        this._weight = _weight;
+        this.title = title;
+     }
+}
 
 
 // проверяем
-// const g1 = new Goods('cucumber', 500);
-// console.log(g1);
+const g1 = new Goods('cucumber', 500);
+console.log(g1);
+
 // console.log(g1._weight); // выдает ошибку - поскольку private
 
 
