@@ -10,6 +10,9 @@ class Goods {
         this._weight = _weight;
         this.title = title;
      }
+     public get weight () : number {
+        return this._weight;
+     }
 }
 
 
@@ -25,8 +28,8 @@ console.log(g1);
 // Допишем геттер в класс Goods. Допишите в предыдущий класс метод геттер для получения свойства _weight из объекта. Название свойства weight.
 
 // проверяем
-// const g2 = new Goods('tomato', 1500);
-// console.log(g2.weight); // должно работать
+const g2 = new Goods('tomato', 1500);
+console.log(g2.weight); // должно работать
 
 
 // Task 03
