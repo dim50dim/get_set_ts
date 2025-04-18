@@ -1,34 +1,4 @@
 
-class T01{
-    private _n1 number = 33;
-    private _n2 : number = 55;
-    public access : boolean = false;
-    
-    public get n11 () : number {
-        return this.n1;
-    }
-    public get n22 () : number {
-        return this._n2;
-    }
-    public set n1 ( a : number) {
-        this.n1 = a;
-    }
-}
-
-  class T02 extends T01 {
-    public get n1() :number{
-
-    }
-  };
-
-  const obj2 = new T02();
-  console.log(obj2);
-  
-
-const obj1 = new T01();
-console.log(obj1.n11);
-
-
 
 // Task 01
 // Создайте класс Goods, который имеет свойство title - string и _weight (private), number. Напишите конструктор, для задания данных свойств. Уточнения для всех задач далее. Если не упоминается про модификатор доступа то считаем что public. Также в конструкторе всегда порядок элементов делается такой, как они описаны в задаче.
