@@ -69,10 +69,10 @@ class Goods_04 {
 
     constructor(t: string, w: number) {
         this.title = t;
-        this.weight(w)
+        this.weight = w;
     }
 
-    public weight(n: number) {
+    public set weight(n: number) {
         if (n >= 0) this._weigth = n;
         else this._weigth = 0;
     }

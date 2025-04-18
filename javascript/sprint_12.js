@@ -50,9 +50,9 @@ class Goods_04 {
     _weigth = 0;
     constructor(t, w) {
         this.title = t;
-        this.weight(w);
+        this.weight = w;
     }
-    weight(n) {
+    set weight(n) {
         if (n >= 0)
             this._weigth = n;
         else
