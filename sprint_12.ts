@@ -121,16 +121,32 @@ console.log(g52);
 // Task 06
 // Создайте класс User, со свойствами _name, _lastName. Оба свойства string, private, равны пустой строке. Создайте сеттеры name, lastName. Оба сеттера должны перед присвоением значений очищать от пробелов по краям и переводить значения в нижний регистр. реализуйте конструктор, который применяет данные сеттеры для установки значений. Напишите геттеры name, lastName, которые возвращают значения _name, _lastName.
 
-// тут пишем класс
+class User {
+    private _name : string = '';
+    private _lastName : string = '';
+
+   constructor(name: string, lastName: string){
+    this._name = name ;
+    this._lastName = lastName;
+   }
+
+   public name(value : string){
+    this._name = value.trim().toLowerCase();
+   }
+
+   public lastName(value : string){
+    this._lastName = value.trim().toLowerCase();
+   }
+}
 
 
 // Для проверки кода снимите комментарий ниже
-// const u = new User(' ОлЕг ', ' НатягниКовдру   ');
-// console.log(u);
-// console.log(u.name);
+const u = new User(' ОлЕг ', ' НатягниКовдру   ');
+console.log(u);
+console.log(u.name);
 // u.lastName = '     нЕпийвода ';
-// console.log(u);
-// console.log(u.lastName);
+console.log(u);
+console.log(u.lastName);
 
 // Task 7. 
 // Напишите класс User_07, который содержит два свойства: _age, число private равное по умолчанию 0 и _adult private, по умолчанию false. Напишите сеттер age, который устанавливает число age, если переданный аргумент больше нуля и меньше 130. В противном случае ставит 0. Также в сеттере реализуйте установку _adult в зависимости от возраста. Если возраст (_age) больше 16 mо _adult true. Во всех остальных случаях - false. Напишите геттеры age, adult. Реализуйте установку age через конструктор с помощью сеттера.   
