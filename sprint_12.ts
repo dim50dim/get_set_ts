@@ -122,29 +122,31 @@ console.log(g52);
 // Создайте класс User, со свойствами _name, _lastName. Оба свойства string, private, равны пустой строке. Создайте сеттеры name, lastName. Оба сеттера должны перед присвоением значений очищать от пробелов по краям и переводить значения в нижний регистр. реализуйте конструктор, который применяет данные сеттеры для установки значений. Напишите геттеры name, lastName, которые возвращают значения _name, _lastName.
 
 class User {
-    private _name : string = '';
-    private _lastName : string = '';
-
-   constructor(name: string, lastName: string){
-    this._name = name ;
-    this._lastName = lastName;
-   }
-
-   public set name(value : string){
-    this._name = value.trim().toLowerCase();
-   }
-
-   public set lastName(value : string){
-    this._lastName = value.trim().toLowerCase();
-   }
-
-   public get name():string{
-    return this._name;
-   }
-   public get lastName() : string{
-    return this._lastName;
-   }
-}
+    private _name: string = '';
+    private _lastName: string = '';
+  
+    constructor(name: string, lastName: string) {
+      this.name = name;
+      this.lastName = lastName;
+    }
+  
+    set name(value: string) {
+      this._name = value.trim().toLowerCase();
+    }
+  
+    set lastName(value: string) {
+      this._lastName = value.trim().toLowerCase();
+    }
+  
+    get name(): string {
+      return this._name;
+    }
+  
+    get lastName(): string {
+      return this._lastName;
+    }
+  }
+  
 
 
 // Для проверки кода снимите комментарий ниже

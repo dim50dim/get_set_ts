@@ -98,8 +98,8 @@ class User {
     _name = '';
     _lastName = '';
     constructor(name, lastName) {
-        this._name = name;
-        this._lastName = lastName;
+        this.name = name;
+        this.lastName = lastName;
     }
     set name(value) {
         this._name = value.trim().toLowerCase();
