@@ -108,14 +108,14 @@ class Goods_05 {
 }
 
 // Для проверки кода снимите комментарий ниже
-// const g51 = new Goods_05('tomato', -600);
-// console.log(g51); 
-// const g52 = new Goods_05('tomato', 700);
-// console.log(g52); 
-// g52.weight = 888;
-// console.log(g52); 
-// g52.weight = -888;
-// console.log(g52); 
+const g51 = new Goods_05('tomato', -600);
+console.log(g51); 
+const g52 = new Goods_05('tomato', 700);
+console.log(g52); 
+g52.weight = 888;
+console.log(g52); 
+g52.weight = -888;
+console.log(g52); 
 
 
 // Task 06

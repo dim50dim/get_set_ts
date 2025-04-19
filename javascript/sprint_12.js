@@ -84,14 +84,14 @@ class Goods_05 {
     }
 }
 // Для проверки кода снимите комментарий ниже
-// const g51 = new Goods_05('tomato', -600);
-// console.log(g51); 
-// const g52 = new Goods_05('tomato', 700);
-// console.log(g52); 
-// g52.weight = 888;
-// console.log(g52); 
-// g52.weight = -888;
-// console.log(g52); 
+const g51 = new Goods_05('tomato', -600);
+console.log(g51);
+const g52 = new Goods_05('tomato', 700);
+console.log(g52);
+g52.weight = 888;
+console.log(g52);
+g52.weight = -888;
+console.log(g52);
 // Task 06
 // Создайте класс User, со свойствами _name, _lastName. Оба свойства string, private, равны пустой строке. Создайте сеттеры name, lastName. Оба сеттера должны перед присвоением значений очищать от пробелов по краям и переводить значения в нижний регистр. реализуйте конструктор, который применяет данные сеттеры для установки значений. Напишите геттеры name, lastName, которые возвращают значения _name, _lastName.
 // тут пишем класс
