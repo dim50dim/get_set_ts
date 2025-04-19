@@ -130,12 +130,19 @@ class User {
     this._lastName = lastName;
    }
 
-   public name(value : string){
+   public set name(value : string){
     this._name = value.trim().toLowerCase();
    }
 
-   public lastName(value : string){
+   public set lastName(value : string){
     this._lastName = value.trim().toLowerCase();
+   }
+
+   public get name():string{
+    return this._name;
+   }
+   public get lastName() : string{
+    return this._lastName;
    }
 }
 
@@ -144,7 +151,7 @@ class User {
 const u = new User(' ОлЕг ', ' НатягниКовдру   ');
 console.log(u);
 console.log(u.name);
-// u.lastName = '     нЕпийвода ';
+u.lastName = '     нЕпийвода ';
 console.log(u);
 console.log(u.lastName);
 

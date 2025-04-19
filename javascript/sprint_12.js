@@ -101,18 +101,24 @@ class User {
         this._name = name;
         this._lastName = lastName;
     }
-    name(value) {
+    set name(value) {
         this._name = value.trim().toLowerCase();
     }
-    lastName(value) {
+    set lastName(value) {
         this._lastName = value.trim().toLowerCase();
+    }
+    get name() {
+        return this._name;
+    }
+    get lastName() {
+        return this._lastName;
     }
 }
 // Для проверки кода снимите комментарий ниже
 const u = new User(' ОлЕг ', ' НатягниКовдру   ');
 console.log(u);
 console.log(u.name);
-// u.lastName = '     нЕпийвода ';
+u.lastName = '     нЕпийвода ';
 console.log(u);
 console.log(u.lastName);
 // Task 7. 
