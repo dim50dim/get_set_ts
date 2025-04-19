@@ -130,19 +130,19 @@ class User {
       this.lastName = lastName;
     }
   
-    set name(value: string) {
+  public   set name(value: string) {
       this._name = value.trim().toLowerCase();
     }
   
-    set lastName(value: string) {
+   public set lastName(value: string) {
       this._lastName = value.trim().toLowerCase();
     }
   
-    get name(): string {
+   public get name(): string {
       return this._name;
     }
   
-    get lastName(): string {
+   public get lastName(): string {
       return this._lastName;
     }
   }
