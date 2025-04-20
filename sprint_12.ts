@@ -229,14 +229,11 @@ console.log(t9.n); // геттер работает в классе наслед
 
 class Test_10 extends Test{
     public set n (value: number) {
-        if (value < 0) {
-            super.n = 0;
-        }else {
-            super.n = value;
-        }
+          this.n = value < 0 ? 0 : value;
     }
-
-
+    public get n() : number {
+        return this.n;
+     }
 }
 
 
