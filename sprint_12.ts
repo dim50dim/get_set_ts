@@ -192,7 +192,7 @@ class User_07{
 // Создайте класс Test содержащий private свойство _n равное нулю. Создайте сеттер n который задает данное свойство и геттер, для получения данного свойства. 
 
 class Test{
-    private _n : number = 0;
+    protected _n : number = 0;
       public set n (value : number) {
         this._n = value;
       }
@@ -229,7 +229,7 @@ console.log(t9.n); // геттер работает в классе наслед
 
 class Test_10 extends Test{
     public set n (value: number) {
-          this._n = value < 0 ? 0 : value;
+       this._n   = value < 0 ? 0 : value;
     }
     public get n() : number {
         return this._n;
@@ -258,7 +258,11 @@ console.log(t10.n); // проверим сработал ли геттер из 
 // Task 12
 // Давайте попробуем сделать обратную операцию. Создайте класс Test_11, который наследуется от Test. Напишите в классе новый геттер, который возвращает _n. И запустите проверку. Цель - проверить будет ли работать сеттер, когда мы написали новый геттер в классе наследнике.
 
-// тут пишем класс
+class Test_11 extends Test{
+    public get n () :number{
+        return this._n;
+    }
+}
 
 
 // const t11 = new Test_11();
