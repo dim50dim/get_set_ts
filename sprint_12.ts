@@ -192,7 +192,7 @@ class User_07{
 // Создайте класс Test содержащий private свойство _n равное нулю. Создайте сеттер n который задает данное свойство и геттер, для получения данного свойства. 
 
 class Test{
-    protected _n : number = 0;
+    private _n : number = 0;
       public set n (value : number) {
         this._n = value;
       }
