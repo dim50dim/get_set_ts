@@ -170,19 +170,23 @@ class User_07{
       }
 
       public set age (value : number){
-        value > 0 && value < 130
+            if(value  > 0 && value < 130){
+                this._age = value;
+            } else{
+                this._age = 0;
+            }
       }
 }
 
 // Для проверки кода снимите комментарий ниже
-// const u7 = new User_07(55);
-// console.log(u7);
+const u7 = new User_07(55);
+console.log(u7);
 
-// u7.age = 12;
-// console.log(u7);
+u7.age = 12;
+console.log(u7);
 
-// console.log(u7.age);
-// console.log(u7.adult);
+console.log(u7.age);
+console.log(u7.adult);
 
 // Task 08
 // Создайте класс Test содержащий private свойство _n равное нулю. Создайте сеттер n который задает данное свойство и геттер, для получения данного свойства. 
