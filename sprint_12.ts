@@ -130,7 +130,7 @@ class User {
       this.lastName = lastName;
     }
   
-  public   set name(value: string) {
+  public set name(value: string) {
       this._name = value.trim().toLowerCase();
     }
   
@@ -160,9 +160,19 @@ console.log(u.lastName);
 // Task 7. 
 // Напишите класс User_07, который содержит два свойства: _age, число private равное по умолчанию 0 и _adult private, по умолчанию false. Напишите сеттер age, который устанавливает число age, если переданный аргумент больше нуля и меньше 130. В противном случае ставит 0. Также в сеттере реализуйте установку _adult в зависимости от возраста. Если возраст (_age) больше 16 mо _adult true. Во всех остальных случаях - false. Напишите геттеры age, adult. Реализуйте установку age через конструктор с помощью сеттера.   
 
-// тут пишем класс
 
+class User_07{
+    private _age : number = 0; 
+    private _adult : boolean = false;
+    
+      constructor(age:number){
+        this.age = age;
+      }
 
+      public set age (value : number){
+        value > 0 && value < 130
+      }
+}
 
 // Для проверки кода снимите комментарий ниже
 // const u7 = new User_07(55);
