@@ -179,26 +179,35 @@ class User_07{
 }
 
 // Для проверки кода снимите комментарий ниже
-const u7 = new User_07(55);
-console.log(u7);
+// const u7 = new User_07(55);
+// console.log(u7);
 
-u7.age = 12;
-console.log(u7);
+// u7.age = 12;
+// console.log(u7);
 
-console.log(u7.age);
-console.log(u7.adult);
+// console.log(u7.age);
+// console.log(u7.adult);
 
 // Task 08
 // Создайте класс Test содержащий private свойство _n равное нулю. Создайте сеттер n который задает данное свойство и геттер, для получения данного свойства. 
 
-// тут пишем класс
+class Test{
+    private _n : number = 0;
+      public set n (value : number) {
+        this._n = value;
+      }
+
+      public get n() : number{
+        return this._n;
+      }
+}
 
 
 // Для проверки кода снимите комментарий ниже
-// const t8 = new Test;
-// t8.n = 99;
-// console.log(t8);
-// console.log(t8.n);
+const t8 = new Test;
+t8.n = 99;
+console.log(t8);
+console.log(t8.n);
 
 
 // Task 09
