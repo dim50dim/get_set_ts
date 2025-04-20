@@ -192,7 +192,7 @@ class User_07{
 // Создайте класс Test содержащий private свойство _n равное нулю. Создайте сеттер n который задает данное свойство и геттер, для получения данного свойства. 
 
 class Test{
-    private _n : number = 0;
+    protected _n : number = 0;
       public set n (value : number) {
         this._n = value;
       }
@@ -229,10 +229,10 @@ console.log(t9.n); // геттер работает в классе наслед
 
 class Test_10 extends Test{
     public set n (value: number) {
-          this.n = value < 0 ? 0 : value;
+          this._n = value < 0 ? 0 : value;
     }
     public get n() : number {
-        return this.n;
+        return this._n;
      }
 }
 
